@@ -1,7 +1,7 @@
 [#1181. 단어 정렬](https://www.acmicpc.net/problem/1181)  
-[solve](https://img.shields.io/badge/solve-fall-brightred)
-[trial](https://img.shields.io/badge/trial-at%20once-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-fall-brightred)
+![trial](https://img.shields.io/badge/trial-at%20once-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

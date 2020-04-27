@@ -1,7 +1,7 @@
 [#2750. 수 정렬하기](https://www.acmicpc.net/problem/2750)  
-[solve](https://img.shields.io/badge/solve-success-brightgreen)
-[trial](https://img.shields.io/badge/trial-at%20once-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-success-brightgreen)
+![trial](https://img.shields.io/badge/trial-at%20once-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

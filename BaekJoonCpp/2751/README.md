@@ -1,7 +1,7 @@
 [#2751. 수 정렬하기 2](https://www.acmicpc.net/problem/2751)  
-[solve](https://img.shields.io/badge/solve-fall-brightred)
-[trial](https://img.shields.io/badge/trial-at%20fourth-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-fall-brightred)
+![trial](https://img.shields.io/badge/trial-at%20fourth-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

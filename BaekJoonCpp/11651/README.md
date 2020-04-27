@@ -1,7 +1,7 @@
 [#11651. 좌표 정렬하기 2](https://www.acmicpc.net/problem/11651)  
-[solve](https://img.shields.io/badge/solve-success-brightgreen)
-[trial](https://img.shields.io/badge/trial-at%20once-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-success-brightgreen)
+![trial](https://img.shields.io/badge/trial-at%20once-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

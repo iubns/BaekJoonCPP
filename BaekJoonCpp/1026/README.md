@@ -1,7 +1,7 @@
 [#1026. 보물](https://www.acmicpc.net/problem/1026)  
-[solve](https://img.shields.io/badge/solve-fall-brightgreen)
-[trial](https://img.shields.io/badge/trial-at%20once-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-fall-brightgreen)
+![trial](https://img.shields.io/badge/trial-at%20once-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

@@ -1,7 +1,7 @@
 [#10866. µ¦](https://www.acmicpc.net/problem/10866)  
-[solve](https://img.shields.io/badge/solve-success-brightgreen)
-[trial](https://img.shields.io/badge/trial-at%20once-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-success-brightgreen)
+![trial](https://img.shields.io/badge/trial-at%20once-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## ¹®Á¦ (Problem)

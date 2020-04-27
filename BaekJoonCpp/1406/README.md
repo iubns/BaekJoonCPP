@@ -1,7 +1,7 @@
 [#1406. 에디터](https://www.acmicpc.net/problem/1406)  
-[solve](https://img.shields.io/badge/solve-fall-brightred)
-[trial](https://img.shields.io/badge/trial-at%20twice-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-fall-brightred)
+![trial](https://img.shields.io/badge/trial-at%20twice-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)

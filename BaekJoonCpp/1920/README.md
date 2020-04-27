@@ -1,7 +1,7 @@
 [#1920. 수 찾기](https://www.acmicpc.net/problem/1920)  
-[solve](https://img.shields.io/badge/solve-success-brightgreen)
-[trial](https://img.shields.io/badge/trial-at%20seventh-green)
-[difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
+![solve](https://img.shields.io/badge/solve-success-brightgreen)
+![trial](https://img.shields.io/badge/trial-at%20seventh-green)
+![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
 ## 문제 (Problem)
