@@ -48,10 +48,12 @@ int main()
 				if (endPoint >= startPint) {
 					if (reverce == false) {
 						startPint++;
-					}else{
+					}
+					else {
 						endPoint--;
 					}
-				} else {
+				}
+				else {
 					cout << "error" << '\n';
 					goto exitTestCase;
 				}
@@ -67,16 +69,17 @@ int main()
 			for (int arrayIndex = startPint; arrayIndex <= endPoint; arrayIndex++) {
 				cout << arr[arrayIndex] << (arrayIndex != endPoint ? ',' : ']');
 			}
-		} else {
+		}
+		else {
 			for (int arrayIndex = endPoint; startPint <= arrayIndex; arrayIndex--) {
 				cout << arr[arrayIndex] << (arrayIndex != startPint ? ',' : ']');
 			}
 		}
-		if (endPoint +1 == startPint) {
+		if (endPoint + 1 == startPint) {
 			cout << ']';
 		}
 		cout << '\n';
-		exitTestCase:
+	exitTestCase:
 		continue;
 	}
 
