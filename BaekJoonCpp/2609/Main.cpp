@@ -42,7 +42,8 @@ int main()
 			min *= *iter;
 			firstNum /= *iter;
 			secondNum /= *iter;
-		} else {
+		}
+		else {
 			iter++;
 		}
 	}
@@ -60,7 +61,8 @@ int main()
 				if (secondNum % *iter == 0) {
 					secondNum /= *iter;
 				}
-			} else {
+			}
+			else {
 				iter++;
 			}
 		}
