@@ -1,6 +1,6 @@
 [#1182. 부분수열의 합](https://www.acmicpc.net/problem/1182)  
 ![solve](https://img.shields.io/badge/solve-failed-brightgreen)
-![trial](https://img.shields.io/badge/trial-at%20once-green)
+![trial](https://img.shields.io/badge/trial-at%20twice-green)
 ![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
@@ -21,3 +21,8 @@
 ## 기타 (ETC)
 > 시간 초과 문제 발생, verctor에 값을 빼고 넣는 과정을 생략할 필요가 있을듯 하다.
 > 또한 target 값과 현재 값의 차이(양,음)을 보고 한쪽의 값만 돌려도 됨, 집에 가서 로직 변경. 
+> 
+> 배열에서 하나씩 빼면서 재귀를 돌리거나 하나씩 더하면서 재귀를 돌릴 경우 a,b,c 가 있을때 
+> a -> b, b -> a 둘다 모두 c가 남으면서 중복이 되게 된다.
+> 따라서 앞에서 부터 들어가냐 아니냐로 재귀를 돌려야 함,
+> 이때 우리는 합이 중요함으로 배열 전체가 아닌 합만 다음 재귀로 넘겨주면 된다.

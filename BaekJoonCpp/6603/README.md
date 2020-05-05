@@ -1,6 +1,6 @@
 [#6603. AC](https://www.acmicpc.net/problem/6603)  
 ![solve](https://img.shields.io/badge/solve-failed-brightgreen)
-![trial](https://img.shields.io/badge/trial-at%20once-green)
+![trial](https://img.shields.io/badge/trial-at%20five-times-green)
 ![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
@@ -29,3 +29,7 @@
 
 ## 기타 (ETC)
 > 출력하는 요소는 정상이나 정렬의 문제가 있음, 재시도를 해야 함. 인터넷이 좋지 않은 문제로 나중에 답지를 보고 푸는 것으로 하겠음
+> 
+> 기존의 코드를 모두 지우고 각각의 요소가 들어가는지 마는지에 따라 재귀로 작성
+> 배열의 개수에서 런타임 에러남, 왜 인지는 모르겠음. 
+> 분명 pickNum은 6개로 고정 최대는 7~12로 고정 되어 있음에도 배열의 개수가 오류남 => 임의로 각각 10, 20으로 변경
