@@ -23,7 +23,7 @@ int main()
 		if (primeNumber[index] == false) {
 			continue;
 		}
-		for (int i = index * 2; i <= maxNumber; i+= index) {
+		for (int i = index * 2; i <= maxNumber; i += index) {
 			primeNumber[i] = false;
 		}
 	}
