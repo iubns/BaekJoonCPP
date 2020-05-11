@@ -1,6 +1,6 @@
 [#15686. 치킨 배달](https://www.acmicpc.net/problem/15686)  
 ![solve](https://img.shields.io/badge/solve-failed-brightred)
-![trial](https://img.shields.io/badge/trial-at%twice-green)
+![trial](https://img.shields.io/badge/trial-at%20twice-green)
 ![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   

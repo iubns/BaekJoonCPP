@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#include <map>
 #include <algorithm>
+#include <math.h>
 
 using namespace std;
 
@@ -11,19 +11,20 @@ void init() {
 	ios_base::sync_with_stdio(false);
 }
 
-map<char, int>chars;
+vector<pair<char, int>> chars;
+
+bool compare(pair<char, int> a, pair<char, int> b) {
+	return a.second > b.second;
+}
 
 int getNumber(char c) {
-	int index = 0;
-	int value = (*chars.find(c)).second;
-
-	for (auto iter = chars.begin(); iter != chars.end(); iter++) {
-		if ((*iter).second > value) {
-			index++;
+	for (int index = 0; index < 10; index++) {
+		if (c == chars[index].first)
+		{
+			return 9 - index;
 		}
 	}
-
-	return 9 - index;
+	return 0;
 }
 
 int main()
@@ -36,6 +37,10 @@ int main()
 	vector<string> strings;
 	strings.resize(stringCount);
 
+	for (char c = 'A'; c <= 'Z'; c++) {
+		chars.push_back(make_pair(c, 0));
+	}
+
 	for (int index = 0; index < stringCount; index++)
 	{
 		cin >> strings[index];
@@ -43,27 +48,23 @@ int main()
 		{
 			strings[index] = '0' + strings[index];
 		}
-	}
-
-	for (int col = 0; col < 8; col++) {
-		for (int row = 0; row < stringCount; row++) {
-			if (strings[row][col] != '0') {
-				chars.insert(make_pair(strings[row][col], 0));
-				(*chars.find(strings[row][col])).second += (pow(10, col));
+		for (int col = 0; col < 8; col++) {
+			if (strings[index][col] < 'A' || strings[index][col] > 'Z') {
+				continue;
 			}
+			chars[strings[index][col] - 'A'].second += pow(10, 8 - col);
 		}
 	}
 
+	sort(chars.begin(), chars.end(), compare);
+
+	int result = 0;
 	for (int row = 0; row < stringCount; row++) {
 		for (int col = 0; col < 8; col++) {
 			if (strings[row][col] != '0') {
 				strings[row][col] = getNumber(strings[row][col]) + 48;
 			}
 		}
-	}
-
-	int result = 0;
-	for (int row = 0; row < stringCount; row++) {
 		result += atoi(strings[row].c_str());
 	}
 
