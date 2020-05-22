@@ -51,7 +51,8 @@ int main()
 		if (target <= 3) {
 			cout << "NO\n";
 			continue;
-		}else if (target % 2 == 0) {
+		}
+		else if (target % 2 == 0) {
 			cout << "YES\n";
 			continue;
 		}
@@ -61,7 +62,8 @@ int main()
 			if (primeNumber[target]) {
 				cout << "YES\n";
 				continue;
-			}else{
+			}
+			else {
 				cout << "NO\n";
 				continue;
 			}
