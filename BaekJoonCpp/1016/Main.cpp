@@ -21,7 +21,7 @@ int main()
 	int gap = max - min;
 
 	vector<bool> numberData(arrSize, false);
-	
+
 	for (long long index = 2; index * index <= max; index++) {
 		long long pow = index * index;
 

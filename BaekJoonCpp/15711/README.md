@@ -1,6 +1,6 @@
 [#15711. È¯»óÀÇ Â¦²á](https://www.acmicpc.net/problem/15711)  
 ![solve](https://img.shields.io/badge/solve-failed-brightred)
-![trial](https://img.shields.io/badge/trial-at%20twice-green)
+![trial](https://img.shields.io/badge/trial-at%20twlvetimes-green)
 ![difficulty](https://img.shields.io/badge/difficulty-easy-brightgreen)
 ---------------------------
   
