@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -9,16 +8,11 @@ void init() {
 	ios_base::sync_with_stdio(false);
 }
 
-string input;
+char input[200000];
 int numSize, k, kCount = 0, result = 0;
 bool check(int targetIndex) {
 	int startIndex = targetIndex - k;
 	startIndex = startIndex < 0 ? 0 : startIndex;
-	for (int index = startIndex; index <= targetIndex + k && index < input.size(); index++) {
-		if (input[index] == '1') {
-			return false;
-		}
-	}
 	return true;
 }
 
@@ -26,7 +20,7 @@ bool check(int targetIndex) {
 int main()
 {
 	init();
-	
+
 	int time;
 	cin >> time;
 
@@ -35,11 +29,21 @@ int main()
 		cin >> numSize >> k;
 		cin >> input;
 		for (int index = 0; index < numSize; index++) {
-			if (check(index)) {
-				result++;
-				input[index] = '1';
+			if (input[index] == '1') {
 				index += k;
+				continue;
 			}
+			for (int targetIndex = index - k < 0 ? 0 : index - k; targetIndex <= index + k && targetIndex < numSize; targetIndex++) {
+				if (input[targetIndex] == '1') {
+					index = targetIndex + k;
+					goto loopContinue;
+				}
+			}
+			result++;
+			input[index] = '1';
+			index += k;
+		loopContinue:
+			continue;
 		}
 		cout << result << endl;
 	}
