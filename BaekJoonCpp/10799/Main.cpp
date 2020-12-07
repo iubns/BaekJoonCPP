@@ -11,7 +11,7 @@ void init() {
 int main()
 {
 	init();
-	
+
 	std::string input;
 	cin >> input;
 
@@ -21,11 +21,13 @@ int main()
 		if (*iter == '(') {
 			if (*(iter + 1) == '(') {
 				currentCount++;
-			} else {
+			}
+			else {
 				iter++;
 				sum += currentCount;
 			}
-		}else  if (*iter == ')') {
+		}
+		else  if (*iter == ')') {
 			sum++;
 			currentCount--;
 		}
