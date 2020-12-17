@@ -38,6 +38,9 @@ int main()
 
 	int min = 1, max = 1;
 	for (auto iter = primeNumbers.begin(); iter != primeNumbers.end();) {
+		if (firstNum < *iter || secondNum < *iter) {
+			break;
+		}
 		if (firstNum % *iter == 0 && secondNum % *iter == 0) {
 			min *= *iter;
 			firstNum /= *iter;
@@ -51,20 +54,26 @@ int main()
 	firstNum *= min;
 	secondNum *= min;
 
-	while (firstNum != 1 && secondNum != 1) {
-		for (auto iter = primeNumbers.begin(); iter != primeNumbers.end();) {
-			if (firstNum % *iter == 0 || secondNum % *iter == 0) {
+	for (auto iter = primeNumbers.begin(); iter != primeNumbers.end(); ) {
+		bool nextIter = true;
+		if (firstNum % *iter == 0) {
+			firstNum /= *iter;
+			max *= *iter;
+			nextIter = false;
+		}
+		if (secondNum % *iter == 0)
+		{
+			secondNum /= *iter;
+			if (nextIter) {
 				max *= *iter;
-				if (firstNum % *iter == 0) {
-					firstNum /= *iter;
-				}
-				if (secondNum % *iter == 0) {
-					secondNum /= *iter;
-				}
 			}
-			else {
-				iter++;
-			}
+			nextIter = false;
+		}
+		if (nextIter) {
+			iter++;
+		}
+		if (firstNum == 1 && secondNum == 1) {
+			break;
 		}
 	}
 
