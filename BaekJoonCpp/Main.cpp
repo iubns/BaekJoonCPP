@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 using namespace std;
 
@@ -10,49 +10,36 @@ void init() {
 	ios_base::sync_with_stdio(false);
 }
 
+int stairsPoint[301] = { 0, };
+int stairsCount = 0;
+int maxPoint = 0;
+int go(int point, int position, int stepCount) {
+	point += stairsPoint[position];
+	if (position > stairsCount) {
+		return 0;
+	}
+
+	if (position == stairsCount) {
+		maxPoint = maxPoint > point ? maxPoint : point;
+	}
+
+	if(stepCount < 2)
+	go(point, position + 1, stepCount + 1);
+	go(point, position + 2, 1);
+}
+
 int main()
 {
 	init();
+	
+	cin >> stairsCount;
 
-	int grid[101][101] = { 0, };
-
-	int computerNum = 0, lineNum = 0;
-	cin >> computerNum >> lineNum;
-
-	int first = 0, second = 0;
-	for (int index = 0; index < lineNum; index++) {
-		cin >> first >> second;
-
-		grid[first][second] = 1;
-		grid[second][first] = 1;
+	for (int index = 1; index <= stairsCount; index++) {
+		cin >> stairsPoint[index];
 	}
 
-	queue<int> infectedComputer;
-	infectedComputer.push(1);
-	int visited[101] = { 0, };
-	int visitedCount = 0;
-
-	int node = 0;
-	while (!infectedComputer.empty())
-	{
-		node = infectedComputer.front();
-		infectedComputer.pop();
-		if (visited[node]) {
-			continue;
-		}
-
-		visited[node] = 1;
-		visitedCount++;
-
-		for (int index = 1; index <= computerNum; index++) {
-			if (grid[node][index]) {
-				infectedComputer.push(index);
-			}
-		}
-	}
-
-	cout << visitedCount - 1;
-
+	go(0, 0, 0);
+	cout << maxPoint;
 
 	return 0;
 }
