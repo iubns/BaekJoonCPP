@@ -33,7 +33,8 @@ int main()
 
 			if (colorIndex == 0) {
 				input += min(data[index - 1][1], data[index - 1][2]);
-			}else if (colorIndex == 1) {
+			}
+			else if (colorIndex == 1) {
 				input += min(data[index - 1][0], data[index - 1][2]);
 			}
 			else if (colorIndex == 2) {
