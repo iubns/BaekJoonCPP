@@ -17,10 +17,10 @@ int main()
 	int input = 0;
 	cin >> input;
 
+	int check[1000001] = { 0, };
 	queue<vector<int>> numQueue;
 	numQueue.push(vector<int>{input, 0});
 
-	int currentNum = 0;
 	while (true)
 	{
 		vector<int> currentNum = numQueue.front();
@@ -30,6 +30,12 @@ int main()
 			cout << currentNum[1] << endl;
 			return 0;
 		}
+
+		if (check[currentNum[0]]) {
+			continue;
+		}
+		check[currentNum[0]] = 1;
+
 
 		if (currentNum[0] % 3 == 0) {
 			numQueue.push(vector<int>{currentNum[0] / 3, currentNum[1] + 1});
