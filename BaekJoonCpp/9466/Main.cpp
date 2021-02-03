@@ -13,7 +13,7 @@ void init() {
 int main()
 {
 	init();
-	
+
 	int time = 0, count = 0, input = 0, start = 0, target = 0, result = 0;
 	cin >> time;
 
