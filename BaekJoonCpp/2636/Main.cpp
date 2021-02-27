@@ -13,7 +13,7 @@ void init() {
 int main()
 {
 	init();
-	
+
 	int row = 0, col = 0;
 
 	int map[100][100];
@@ -24,7 +24,7 @@ int main()
 		}
 	}
 
-	for(int time = 0; ; time++)
+	for (int time = 0; ; time++)
 	{
 		queue<vector<int>> removeQueue;
 		removeQueue.push(vector<int>{0, 0});
