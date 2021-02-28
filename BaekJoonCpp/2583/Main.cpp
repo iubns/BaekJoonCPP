@@ -14,7 +14,7 @@ void init() {
 int main()
 {
 	init();
-	
+
 	int row = 0, col = 0, count = 0;
 
 	int map[100][100] = { 0, };
@@ -55,11 +55,11 @@ int main()
 					if (current[1] > 0) {
 						checkQueue.push(vector<int>{current[0], current[1] - 1});
 					}
-					if (current[0] < row  -1) {
+					if (current[0] < row - 1) {
 						checkQueue.push(vector<int>{current[0] + 1, current[1]});
 					}
 					if (current[1] < col - 1) {
-						checkQueue.push(vector<int>{current[0], current[1]+ 1});
+						checkQueue.push(vector<int>{current[0], current[1] + 1});
 					}
 				}
 
