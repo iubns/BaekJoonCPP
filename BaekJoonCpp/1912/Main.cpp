@@ -14,7 +14,7 @@ int main()
 
 	int size, max, current, input;
 	cin >> size;
-	
+
 	cin >> max;
 	current = max;
 	for (int index = 1; index < size; index++) {
